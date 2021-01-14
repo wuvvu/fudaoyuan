@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.wuvvu.fudaoyuan.mapper.TeacherMapper">
+
+    <resultMap id="TeamResult" type="Team">
+        <id property="id" column="teamId" />
+        <result property="name" column="teamName" />
+    </resultMap>
+
+    <resultMap id="StudentResult" type="Student">
+        <id property="id" column="studentId" />
+        <result property="code" column="studentCode" />
+        <result property="password" column="studentPassword" />
+        <result property="realName" column="studentRealName" />
+        <result property="phone" column="studentPhone" />
+        <association property="team" column="teamId" resultMap="TeamResult" />
+    </resultMap>
+
+    <select id="findStudentById" resultMap="StudentResult">
+        select
+            s.id as 'studentId',
+            s.code as 'studentCode',
+            s.password as 'studentPassword',
+            s.realName as 'studentRealName',
+            s.phone as 'studentPhone',
+            team.id as 'teamId',
+            team.name as 'teamName'
+        from student s, team
+        where
+            s.teamId = team.id
+            and s.id = #{value}
+    </select>
+
+    <select id="findStudentByCode" resultMap="StudentResult">
+        select
+            s.id as 'studentId',
+            s.code as 'studentCode',
+            s.password as 'studentPassword',
+            s.realName as 'studentRealName',
+            s.phone as 'studentPhone',
+            team.id as 'teamId',
+            team.name as 'teamName'
+        from student s, team
+        where
+            s.teamId = team.id
+            and s.code = #{value}
+    </select>
+
+    <resultMap id="TeacherResult" type="Teacher">
+        <id property="id" column="teacherId" />
+        <result property="code" column="teacherCode" />
+        <result property="password" column="teacherPassword" />
+        <result property="realName" column="teacherRealName" />
+        <result property="phone" column="teacherPhone" />
+    </resultMap>
+
+    <select id="findTeacherById" resultMap="TeacherResult">
+        select
+            t.id as 'teacherId',
+            t.code as 'teacherCode',
+            t.password as 'teacherPassword',
+            t.realName as 'teacherRealName',
+            t.phone as 'teacherPhone'
+        from teacher t
+        where
+            t.id = #{value}
+    </select>
+
+    <select id="findTeacherByCode" resultMap="TeacherResult">
+        select
+            t.id as 'teacherId',
+            t.code as 'teacherCode',
+            t.password as 'teacherPassword',
+            t.realName as 'teacherRealName',
+            t.phone as 'teacherPhone'
+        from teacher t
+        where
+            t.code = #{value}
+    </select>
+
+
+
+
+
+
+
+</mapper>

@@ -1,0 +1,61 @@
+server:
+  port: 8090
+#  tomcat:
+#    uri-encoding: utf-8
+#  servlet:
+#    encoding:
+#      charset: utf-8
+#      force: true
+#      enabled: true
+
+mybatis:
+  typeAliasesPackage: cn.wuvvu.fudaoyuan.model
+  mapperLocations: classpath:mapper/*.xml
+
+spring:
+#  mvc:
+#    view:
+#      prefix: /jsp/
+#      suffix: .jsp
+  thymeleaf:
+    encoding: UTF-8
+    # prefix: classpath:/templates/
+    suffix: .html
+    cache: false
+
+  datasource:
+    #type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://wuvvu.cn:33066/fudaoyuan?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Hongkong #&allowMultiQueries=true
+    hikari:
+      pool-name: HikariCP
+      username: root
+      password: root
+      minimum-idle: 5
+      maximum-pool-size: 15
+      idle-timeout: 10000
+      max-lifetime: 30000
+      connection-timeout: 30000
+      connection-test-query: select 1
+
+  servlet:
+    multipart:
+      max-file-size: 1073741824 # 最大支持文件大小 即单个文件大小
+      max-request-size: 1073741824 # 最大支持请求大小 即一次性上传的总文件大小
+
+  #devTool
+#  devtools:
+#    restart:
+#      enabled: true
+#      additional-paths: src/main/java
+
+
+logging:
+  level:
+    cn.wuvvu.fudaoyuan.mapper: debug
+
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql
