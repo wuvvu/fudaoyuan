@@ -10,6 +10,15 @@
         <result property="phone" column="adminPhone" />
     </resultMap>
 
+    <select id="listAdmin" resultMap="AdminResult">
+        select
+            a.id as 'adminId',
+            a.username as 'adminUsername',
+            a.realName as 'adminRealName',
+            a.phone as 'adminPhone'
+        from admin a
+    </select>
+
     <select id="getAdminById" resultMap="AdminResult">
         select
             a.id as 'adminId',
@@ -34,7 +43,26 @@
         limit 1
     </select>
 
+    <insert id="addAdmin" parameterType="Admin" useGeneratedKeys="true" keyProperty="id">
+        insert ignore into admin(username, password, realName, phone)
+            values (#{username}, #{password}, #{realName}, #{phone})
+    </insert>
 
+    <update id="modifyAdmin" parameterType="Admin">
+        update admin set username = #{username}, realName = #{realName}, phone = #{phone}
+        where id = #{id}
+        limit 1
+    </update>
+
+    <update id="resetAdminPassword" parameterType="Admin">
+        update admin set password = md5(#{username})
+        where id = #{id}
+        limit 1
+    </update>
+
+    <delete id="deleteAdminById">
+        delete from admin where id = #{value} limit 1
+    </delete>
 
     <resultMap id="StudentResult" type="Student">
         <id property="id" column="studentId" />

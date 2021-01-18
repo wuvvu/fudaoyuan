@@ -13,9 +13,17 @@ import java.util.List;
 @Repository
 public interface AdminMapper {
 
+    List<Admin> listAdmin();
+
     Admin getAdminById(int id);
 
     Admin getAdminByUsername(String username);
+
+    int addAdmin(Admin admin);
+
+    int modifyAdmin(Admin admin);
+
+    int resetAdminPassword(Admin admin);
 
     List<Teacher> listTeacher();
 
@@ -34,4 +42,6 @@ public interface AdminMapper {
     Student getStudentById(int id);
 
     Student getStudentByCode(String code);
+
+    int deleteAdminById(int id);
 }

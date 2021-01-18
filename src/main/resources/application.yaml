@@ -38,10 +38,10 @@ spring:
       connection-timeout: 30000
       connection-test-query: select 1
 
-  servlet:
-    multipart:
-      max-file-size: 1073741824 # 最大支持文件大小 即单个文件大小
-      max-request-size: 1073741824 # 最大支持请求大小 即一次性上传的总文件大小
+#  servlet:
+#    multipart:
+#      max-file-size: 1073741824 # 最大支持文件大小 即单个文件大小
+#      max-request-size: 1073741824 # 最大支持请求大小 即一次性上传的总文件大小
 
   #devTool
 #  devtools:
@@ -54,8 +54,8 @@ logging:
   level:
     cn.wuvvu.fudaoyuan.mapper: debug
 
-pagehelper:
-  helper-dialect: mysql
-  reasonable: true
-  support-methods-arguments: true
-  params: count=countSql
+#pagehelper:
+#  helper-dialect: mysql
+#  reasonable: true
+#  support-methods-arguments: true
+#  params: count=countSql
