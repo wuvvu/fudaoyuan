@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="105a5d06-a7cc-4b9a-a23e-fa990c48980b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/hui/lib/ueditor/1.4.3/jsp/src/com/baidu/ueditor/ActionEnter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/hui/lib/ueditor/1.4.3/jsp/src/com/baidu/ueditor/ActionEnter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/hui/lib/ueditor/1.4.3/jsp/src/com/baidu/ueditor/ConfigManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/hui/lib/ueditor/1.4.3/jsp/src/com/baidu/ueditor/ConfigManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/hui/lib/ueditor/1.4.3/jsp/src/com/baidu/ueditor/define/ActionMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/hui/lib/ueditor/1.4.3/jsp/src/com/baidu/ueditor/define/ActionMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/hui/lib/ueditor/1.4.3/jsp/src/com/baidu/ueditor/define/BaseState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/hui/lib/ueditor/1.4.3/jsp/src/com/baidu/ueditor/define/BaseState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/hui/lib/ueditor/1.4.3/jsp/src/com/baidu/ueditor/define/MultiState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/hui/lib/ueditor/1.4.3/jsp/src/com/baidu/ueditor/define/MultiState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/hui/lib/ueditor/1.4.3/jsp/src/com/baidu/ueditor/hunter/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/hui/lib/ueditor/1.4.3/jsp/src/com/baidu/ueditor/hunter/FileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/hui/lib/ueditor/1.4.3/jsp/src/com/baidu/ueditor/hunter/ImageHunter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/hui/lib/ueditor/1.4.3/jsp/src/com/baidu/ueditor/hunter/ImageHunter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/hui/lib/ueditor/1.4.3/jsp/src/com/baidu/ueditor/upload/Base64Uploader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/hui/lib/ueditor/1.4.3/jsp/src/com/baidu/ueditor/upload/Base64Uploader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/hui/lib/ueditor/1.4.3/jsp/src/com/baidu/ueditor/upload/BinaryUploader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/hui/lib/ueditor/1.4.3/jsp/src/com/baidu/ueditor/upload/BinaryUploader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/hui/lib/ueditor/1.4.3/jsp/src/com/baidu/ueditor/upload/StorageManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/hui/lib/ueditor/1.4.3/jsp/src/com/baidu/ueditor/upload/StorageManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/hui/lib/ueditor/1.4.3/jsp/src/com/baidu/ueditor/upload/Uploader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/hui/lib/ueditor/1.4.3/jsp/src/com/baidu/ueditor/upload/Uploader.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -186,7 +179,7 @@
       <workItem from="1610795164754" duration="4857000" />
       <workItem from="1610817198389" duration="2351000" />
       <workItem from="1610932520693" duration="1469000" />
-      <workItem from="1610974371122" duration="1601000" />
+      <workItem from="1610974371122" duration="4155000" />
     </task>
     <task id="LOCAL-00001" summary="管理员信息管理">
       <created>1610978003839</created>
@@ -195,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610978003839</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="管理员信息管理">
+      <created>1610978179736</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610978179736</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
